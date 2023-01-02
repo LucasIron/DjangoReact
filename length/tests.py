@@ -5,7 +5,7 @@ from django.urls import reverse
 class TestLengthConversion(TestCase):
     def setUp(self):
         self.client = Client()
-        self.url = reverse('length:DjangoReact')
+        self.url = reverse('length:convert')
 
     def test_centimeter_to_meter_conversion(self):
         data = {
